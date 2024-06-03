@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>30 Days Of React Challenge</title>
+  </head>
+
+  <body>
+    <div class="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      // To get the root element from the HTML document
+      const rootElement = document.querySelector('.root');
+
+      const lastName = 'Seyzeriat--Meyer';
+      const country = 'France';
+      const title = 'Developer';
+      const gender = 'Male';
+      const email = 'gseyzeriat1@gmail.com';
+      const phone = '0758684525';
+      const skills = ['javascript', 'react', 'php'];
+
+      const mapSkills = skills.map(skill => {
+        return <li>{skill}</li>;
+      });
+
+      // JSX element, header
+      const nameGauthier = <span>Gauthier</span>;
+      const header = (
+        <div style={{ textAlign: 'center' }}>
+          <h1>
+            {nameGauthier} {lastName}
+          </h1>
+          <p>{country}</p>
+          <p>{title}</p>
+          <p>{gender}</p>
+          <p>{email}</p>
+          <p>{phone}</p>
+        </div>
+      );
+
+      const footer = (
+        <p style={{ color: 'orange', textAlign: 'center' }}>
+          Copyright 2024 🔥
+        </p>
+      );
+
+      // JSX element, app
+      const app = (
+        <div
+          className="app"
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            height: '100vh'
+          }}
+        >
+          {header}
+          <ul style={{ color: 'red' }}>{mapSkills}</ul>
+          {footer}
+        </div>
+      );
+
+      // we render the JSX element using the ReactDOM package
+      ReactDOM.render(app, rootElement);
+    </script>
+  </body>
+</html>
