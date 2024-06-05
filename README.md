@@ -109,3 +109,37 @@ npx create-react-app my-new-project
 cd my-new-project
 npm start
 ```
+
+# JavaScript Functions and React Components
+
+## What is the difference between a regular function and an arrow function?
+
+The main differences between regular functions and arrow functions in JavaScript are:
+
+1. **Syntax**: Arrow functions have a more concise syntax compared to regular functions.
+2. **`this` Context**: Arrow functions do not have their own `this` context. They inherit `this` from the surrounding scope, which makes them useful in situations where you want to preserve the context of `this`.
+3. **Arguments Object**: Arrow functions do not have their own `arguments` object. If you need to access the `arguments` object, you must use a regular function.
+
+## What is a React Component?
+
+A React Component is a reusable piece of the user interface. It can be a class or a function that returns a React element. Components can accept inputs (called "props") and manage their own state to render dynamic content.
+
+## How do you make a React functional component?
+
+A React functional component is a JavaScript function that returns a React element. Functional components can accept props as an argument and use hooks to manage state and lifecycle events.
+
+## What is the difference between a pure JavaScript function and a functional component?
+
+The main differences are:
+
+1. **Return Value**: A pure JavaScript function can return any type of value, while a functional component must return a React element.
+2. **Usage**: A pure JavaScript function is used for general programming tasks, whereas a functional component is specifically used to define part of the UI in a React application.
+3. **Lifecycle**: Functional components can use hooks like `useState` and `useEffect` to manage state and lifecycle events, which is not applicable to regular JavaScript functions.
+
+## How small is a React component?
+
+A React component can be as small as you want. It can represent a single HTML element like a button or an input field, or it can be a larger component that includes many child components. The idea is to break down the UI into small, reusable pieces.
+
+## Can we make a button or input field component?
+
+Yes, you can create a button or input field component in React. These components can be as simple or complex as needed and can encapsulate functionality and styling specific to buttons or input fields.

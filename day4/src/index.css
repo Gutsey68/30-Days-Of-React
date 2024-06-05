@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --destructive: hsl(4 91% 81%);
+  --destructive-foreground: hsl(4 91% 21%);
+  --success: hsl(129 55% 81%);
+  --success-foreground: hsl(129 55% 21%);
+  --warning: hsl(43 89% 77%);
+  --warning-foreground: hsl(43 89% 17%);
+  --info: hsl(212 82% 78%);
+  --info-foreground: hsl(212 82% 18%);
+}
+
+* {
+  margin: 0;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.input-simple {
+  background-color: white;
+  border: 1px white solid;
+  border-radius: 6px;
+  margin: 2rem 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.warning {
+  background-color: var(--destructive);
+  color: var(--destructive-foreground);
+  width: fit-content;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  margin: 0.5rem;
+}
+
+.success {
+  background-color: var(--success);
+  color: var(--success-foreground);
+  width: fit-content;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  margin: 0.5rem;
+}
+
+.subscribe {
+  display: flex;
+  background-color: #c2e6f4;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+.hexacolor {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  padding: 1rem 0;
+  margin: 2px 10rem;
+  border-radius: 6px;
+}
+
+.portfolio {
+  margin: 3rem 1rem;
+  padding: 1rem 9rem;
+}
+
+.portfolio h2 {
+  margin-top: 1rem;
+}
+
+.portfolio h3 {
+  margin: 0.5rem 0;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.portfolio h4 {
+  margin: 1rem 0;
+}
+
+.portfolio span {
+  background-color: #2acfcf;
+  color: white;
+  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+  margin-left: 0.5rem;
+}
+
+.portfolio p {
+  margin-bottom: 1rem;
+}
