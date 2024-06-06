@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  font-family: 'Philosopher', sans-serif;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 50rem;
+}
+
+.front-end {
+  margin: 2rem auto;
+}
+h1 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.html {
+  color: #e34f26;
+  font-size: 7rem;
+}
+
+.css {
+  color: #1472b7;
+  font-size: 7rem;
+}
+
+.javascript {
+  color: #d6ba32;
+  font-size: 7rem;
+}
+
+.react {
+  color: #61dafb;
+  font-size: 7rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.subscribe {
+  background-color: #c2e6f4;
+  text-align: center;
+  margin: 2rem 1rem;
+  border-radius: 6px;
+  padding: 2rem;
+}
+
+.subscribe button {
+  background-color: #f37474;
+  border: 1px solid #f37474;
+  border-radius: 6px;
+  padding: 0.4rem 5rem;
+  color: white;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.subscribe p {
+  margin: 1.5rem;
+}
+
+.input-field input {
+  padding: 0.4rem 1.2rem;
+  border-radius: 6px;
+  border: 1px solid white;
+  outline: none;
+}
+
+.input-field input:nth-child(2) {
+  margin: 0 0.5rem;
+}
+
+.hexacolor {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  padding: 1rem 0;
+  margin: 2px;
+  border-radius: 6px;
+}
+
+.portfolio {
+  margin: 3rem 0;
+  padding: 1rem 0;
+}
+
+.portfolio h2 {
+  margin-top: 1rem;
+}
+
+.portfolio h3 {
+  margin: 0.5rem 0;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.portfolio h4 {
+  margin: 1rem 0;
+}
+
+.portfolio span {
+  background-color: #2acfcf;
+  color: white;
+  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+  margin-left: 0.5rem;
+}
+
+.portfolio span:hover {
+  background-color: #25aeae;
+}
+
+.portfolio p {
+  margin-bottom: 1rem;
+}

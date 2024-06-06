@@ -143,3 +143,34 @@ A React component can be as small as you want. It can represent a single HTML el
 ## Can we make a button or input field component?
 
 Yes, you can create a button or input field component in React. These components can be as simple or complex as needed and can encapsulate functionality and styling specific to buttons or input fields.
+
+# React Props
+
+## What is props in a React component?
+
+Props (short for "properties") are read-only inputs passed from a parent component to a child component in React. They allow data and event handlers to be passed down the component tree, enabling communication between components.
+
+## How do you access props in a React component?
+
+In a functional component, props are accessed through the function's parameters. In a class component, props are accessed via `this.props`.
+
+## What data types can we pass as props to components?
+
+You can pass various data types as props to components, including:
+
+- Strings
+- Numbers
+- Booleans
+- Arrays
+- Objects
+- Functions
+- React elements
+- Other components
+
+## What is a propTypes?
+
+`propTypes` is a property used to specify the expected data types and structure for the props a component should receive. It helps with type-checking and ensures that the component is used correctly. This is typically done using the `prop-types` library.
+
+## What is a default propTypes?
+
+Default `propTypes` are specified using the `defaultProps` property on a component. They define the default values for props that are not provided by the parent component. This ensures that the component has sensible defaults and can function correctly even if some props are missing.
