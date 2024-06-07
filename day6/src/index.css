@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'REM', sans-serif;
+  width: 720px;
+}
+
+.prime {
+  background-color: #fd5e53;
+}
+
+.even {
+  background-color: #22bf73;
+}
+
+.odd {
+  background-color: #fddb3a;
+}
+
+.prime,
+.even,
+.odd {
+  width: 5rem;
+  margin: 1px;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.heading {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.heading h1 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.heading p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.color-div {
+  width: 5.5rem;
+  margin: 1px;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  display: inline-block;
+}
+
+.hexodecimal {
+  text-align: center;
+}
+
+.hexodecimal p {
+  margin: 1.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.population {
+  text-align: center;
+}
+
+.population p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+
+.orange {
+  background-color: orange;
+  height: 1rem;
+  margin-left: 0;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat p {
+  width: 20%;
+  text-align: left;
+  margin: 0;
+}
