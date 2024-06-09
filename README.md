@@ -238,3 +238,42 @@ React life cycle refers to the series of methods that are invoked in different s
 ## What is state in React?
 
 State in React is an object that holds data that influences the output of a component. It allows components to create and manage their own data that can change over time. State is managed within the component and can be updated using the `setState` method in class based components or the `useState` hook in functional components.
+
+# React State and Props
+
+## What is state in React?
+
+State in React is an object that holds data or information about the component. It is managed within the component and can change over time. The state is used to create dynamic and interactive components by allowing components to respond to user input, network responses, and other events.
+
+## What is the difference between props and state in React?
+
+The main differences between props and state in React are:
+
+- **Props**:
+
+  - Props (short for "properties") are read-only inputs passed from a parent component to a child component.
+  - Props are immutable, meaning they cannot be modified by the receiving component.
+  - Props are used to pass data and event handlers to child components.
+
+- **State**:
+  - State is an internal object managed within a component.
+  - State is mutable, meaning it can be updated by the component.
+  - State is used to keep track of data that changes over time and affects the rendering of the component.
+
+## How do you access state in a React component?
+
+In a class-based component, state is accessed using `this.state`. In a functional component, state is accessed using the `useState` hook.
+
+## How do you set a state in a React component?
+
+In a class-based component, state is set using the `setState` method. In a functional component, state is set using the `setState` function returned by the `useState` hook.
+
+### Class-based Component:
+
+- Access state: `this.state`
+- Set state: `this.setState({ key: value })`
+
+### Functional Component with Hooks:
+
+- Access state: `[state, setState] = useState(initialValue)`
+- Set state: `setState(newValue)`

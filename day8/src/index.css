@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --rubis-light-foreground: #621639;
+  --rubis-light-accent: #dc3b5d;
+  --rubis-light-border: #efacb8;
+  --rubis-light-interactive: #ffdce1;
+  --rubis-light-background: #fff7f8;
+  --rubis-dark-foreground: #fed2e1;
+  --rubis-dark-accent: #e54666;
+  --rubis-dark-border: #883447;
+  --rubis-dark-interactive: #5e1a2e;
+  --rubis-dark-background: #191113;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.photo img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+ul {
+  list-style: none;
+}
+
+.welcome {
+  position: relative;
+  z-index: 2;
+}
+
+.welcome h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.welcome p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.welcome p:first-of-type {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcome p:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.infos,
+.gauthier {
+  position: relative;
+  z-index: 2;
+}
+
+.infos p {
+  font-weight: 600;
+}
+
+.portfolio-gauthier {
+  background-color: var(--rubis-light-background);
+  color: var(--rubis-light-foreground);
+  padding: 2rem 5rem;
+}
+
+.actions button {
+  background-color: var(--rubis-light-accent);
+  border: 1px solid var(--rubis-light-accent);
+  color: var(--rubis-light-interactive);
+  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+  margin-right: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.light {
+  background-color: var(--rubis-light-accent);
+  height: 1px;
+  border: none;
+}
+
+.dark-portfolio-gauthier {
+  background-color: var(--rubis-dark-background);
+  color: var(--rubis-dark-foreground);
+  padding: 2rem 5rem;
+}
+
+.dark-light {
+  background-color: var(--rubis-dark-accent);
+  height: 1px;
+  border: none;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(64px);
+  z-index: 0;
+}
+
+.wrap {
+  width: 80vh;
+  aspect-ratio: 1/1;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 247, 248, 1) 0%,
+    rgb(218, 48, 128) 100%
+  );
+  opacity: 0.5;
+  clip-path: polygon(83% 48%, 90% 20%, 93% 66%, 63% 78%, 81% 60%, 50% 29%);
+  position: relative;
+  z-index: 0;
+}
+
+.flag img {
+  width: 10rem;
+}
+
+.flag {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  text-align: center;
+  font-weight: 600;
+}
+
+.country {
+  background-color: var(--rubis-light-background);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--rubis-light-border);
+  margin: 1rem auto;
+  width: 15rem;
+  border-radius: 6px;
+}
+
+.country-infos {
+  margin: 0 auto 0 0;
+  padding-left: 0.5rem;
+}
+
+.country-infos p {
+  margin: 0.5rem;
+}
+
+.country button {
+  background-color: var(--rubis-light-accent);
+  border: 1px solid var(--rubis-light-accent);
+  color: var(--rubis-light-interactive);
+  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  font-weight: 500;
+  margin: 0.5rem auto;
+}
