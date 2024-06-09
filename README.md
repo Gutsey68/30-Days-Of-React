@@ -192,3 +192,49 @@ Destructuring is important because it allows you to extract values from arrays o
 ## Does destructuring make your code clean and easy to read?
 
 Yes, destructuring makes your code cleaner and easier to read. By reducing the need for repetitive and verbose code, it highlights the important parts of the code and makes the intention clearer. Destructuring helps to quickly identify which properties or elements are being accessed or used, improving overall code readability and maintainability.
+
+# JavaScript and React Components
+
+## How do you write a pure JavaScript function?
+
+A pure JavaScript function is a function that, given the same input, will always return the same output and does not cause any observable side effects. It does not modify any external state and relies solely on its input parameters.
+
+## What is inheritance and how do you make a child from a parent class?
+
+Inheritance is a fundamental concept in object-oriented programming where a class (child class) inherits properties and methods from another class (parent class). This allows the child class to reuse the code defined in the parent class and also extend or override the behavior. To create a child class from a parent class, the child class uses the `extends` keyword followed by the parent class name.
+
+## What is a class based React component?
+
+A class based React component is a component defined using ES6 class syntax. It extends `React.Component` and must include a `render` method that returns a React element. Class based components can have state and lifecycle methods.
+
+## What is the difference between functional React component and class based React component?
+
+The main differences are:
+
+- **Syntax**: Functional components are simple JavaScript functions, while class based components use ES6 class syntax.
+- **State and Lifecycle**: Functional components use hooks like `useState` and `useEffect` to manage state and lifecycle, whereas class based components use `this.state` and lifecycle methods like `componentDidMount`.
+- **Performance**: Functional components with hooks can be more performant because they avoid some of the overhead associated with classes.
+
+## When do we need to use class based components instead of functional components?
+
+Class based components are typically used when you need to use lifecycle methods that are not easily replicated with hooks, or when working on an existing codebase that already uses class based components. However, with the introduction of hooks, the need for class based components has significantly decreased.
+
+## What is the use cases of class based component?
+
+Class based components are useful when:
+
+- You need to manage state and lifecycle methods in a more traditional object-oriented approach.
+- You are working with an older codebase that heavily uses class based components.
+- You need to use lifecycle methods that might be complex to handle with hooks.
+
+## Which type of component do you use most frequently? functional or class-based component?
+
+Most developers now use functional components more frequently due to their simplicity and the power of hooks, which allow functional components to manage state and lifecycle effectively.
+
+## What is React life cycle?
+
+React life cycle refers to the series of methods that are invoked in different stages of a component's existence. These stages include mounting (when the component is first rendered), updating (when the component's state or props change), and unmounting (when the component is removed from the DOM). Lifecycle methods allow developers to run code at specific points in a component's life.
+
+## What is state in React?
+
+State in React is an object that holds data that influences the output of a component. It allows components to create and manage their own data that can change over time. State is managed within the component and can be updated using the `setState` method in class based components or the `useState` hook in functional components.
