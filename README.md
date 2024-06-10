@@ -277,3 +277,28 @@ In a class-based component, state is set using the `setState` method. In a funct
 
 - Access state: `[state, setState] = useState(initialValue)`
 - Set state: `setState(newValue)`
+
+# Conditional Rendering in React
+
+## What is conditional rendering?
+
+Conditional rendering in React refers to the ability to render different UI elements or components based on certain conditions. It allows developers to dynamically control what is displayed on the screen depending on the state or props of the component.
+
+## How do you implement conditional rendering?
+
+There are several ways to implement conditional rendering in React:
+
+1. **Using if/else statements**:
+   This is the most straightforward way to conditionally render elements. However, it cannot be directly used inside JSX. You need to put the logic outside the JSX return statement.
+
+2. **Using ternary operators**:
+   The ternary operator is a concise way to conditionally render elements within JSX. It is suitable for simple conditions.
+
+3. **Using logical && operator**:
+   The logical AND (`&&`) operator can be used to render an element only if a condition is true. If the condition is false, nothing is rendered.
+
+4. **Using switch/case statements**:
+   For multiple conditions, using a switch statement outside of the JSX can help organize and manage the different rendering options.
+
+5. **Using immediate if (IIFE) or self-invoking functions**:
+   This is useful when you need to include more complex logic within the JSX return statement.
