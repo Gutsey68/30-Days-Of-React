@@ -302,3 +302,28 @@ There are several ways to implement conditional rendering in React:
 
 5. **Using immediate if (IIFE) or self-invoking functions**:
    This is useful when you need to include more complex logic within the JSX return statement.
+
+# React Folder Structure and File Naming
+
+## Importance of React Folder Structure and File Naming
+
+### Readability and Maintainability
+
+- A well-organized folder structure makes it easier to navigate the project, quickly find files and components.
+- Consistent file naming helps developers quickly understand what each file contains and its role in the application.
+
+### Scalability
+
+- A thoughtful structure allows the application to grow without becoming cluttered. It also makes it easier to add new features and manage complexity.
+
+### Team Collaboration
+
+- In a collaborative development environment, clear structure and naming conventions enable all team members to work efficiently without getting lost in the code.
+
+## How to Export a File
+
+In React, you can export files in two ways: `export default` and `export named`.
+
+### `export default`
+
+This method allows you to export a default value from a file. It can be a class, function, object, etc.
