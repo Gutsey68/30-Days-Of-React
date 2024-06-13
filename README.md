@@ -536,3 +536,54 @@ Controlled inputs are used when you need to manage the input's value through the
 ## Do you use a controlled or uncontrolled input to validate form input fields?
 
 Controlled inputs are used to validate form input fields because they provide direct control over the input's value through the React state, making it easier to implement and manage validation logic.
+
+# React Component Life Cycles
+
+## What is component life cycles?
+
+Component life cycles refer to the sequence of events that happen from the creation to the destruction of a React component. These events allow developers to hook into specific points of a component's existence to perform actions such as fetching data, updating the DOM, or cleaning up resources.
+
+## What is the purpose of life cycles?
+
+The purpose of life cycles is to give developers control over what happens at different stages of a component's life. This includes managing side effects, optimizing performance, and ensuring resources are properly allocated and cleaned up.
+
+## What are the three stages of a component life cycle?
+
+1. **Mounting**: When the component is being created and inserted into the DOM.
+2. **Updating**: When the component is being re-rendered due to changes in state or props.
+3. **Unmounting**: When the component is being removed from the DOM.
+
+## What does mounting mean?
+
+Mounting refers to the process of creating a component and inserting it into the DOM for the first time. This is when the component initializes and renders for the first time.
+
+## What does updating mean?
+
+Updating refers to the process of re-rendering a component due to changes in its state or props. This can happen multiple times during the component's life as the data it relies on changes.
+
+## What does unmounting mean?
+
+Unmounting refers to the process of removing a component from the DOM. This is when the component is destroyed and any cleanup tasks are performed.
+
+## What is the most common built-in mounting life cycle method?
+
+The most common built-in mounting life cycle method is `componentDidMount`.
+
+## What are the mounting life cycle methods?
+
+1. **`constructor`**: Initializes the component's state and binds methods.
+2. **`getDerivedStateFromProps`**: Syncs state with props when the component is created.
+3. **`render`**: Returns the JSX to render the component.
+4. **`componentDidMount`**: Invoked immediately after the component is inserted into the DOM. It's a good place to fetch data or set up subscriptions.
+
+## What are the updating life cycle methods?
+
+1. **`getDerivedStateFromProps`**: Syncs state with props when the component is updated.
+2. **`shouldComponentUpdate`**: Determines if a re-render is necessary.
+3. **`render`**: Returns the JSX to update the component.
+4. **`getSnapshotBeforeUpdate`**: Captures some information from the DOM before it is potentially changed.
+5. **`componentDidUpdate`**: Invoked immediately after the component updates. It's a good place to operate on the DOM after the changes have been flushed.
+
+## What is the unmounting life cycle method?
+
+1. **`componentWillUnmount`**: Invoked immediately before the component is removed from the DOM. It's a good place to clean up subscriptions, timers, or any other resources that were set up in `componentDidMount`.
