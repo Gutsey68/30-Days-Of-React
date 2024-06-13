@@ -494,3 +494,45 @@ Validation is the process of checking if the data entered into a form meets spec
 - **onChange**: Validate the input as the user types.
 - **onBlur**: Validate the input when the user leaves the input field.
 - **onSubmit**: Validate the entire form when it is submitted.
+
+# React Input Management
+
+## What is a controlled input?
+
+A controlled input is an input element in a React component whose value is controlled by the component's state. This means that the value of the input field is set and managed by the React state, and any changes to the input field are handled by updating the state.
+
+## What is an uncontrolled input?
+
+An uncontrolled input is an input element in a React component that maintains its own internal state. Instead of relying on React state to manage the input value, you access the value directly from the DOM using refs.
+
+## How do you get the content of a certain HTML element in React?
+
+To get the content of a certain HTML element in React, you typically use refs. Refs provide a way to access the DOM nodes or React elements created in the render method.
+
+## Why it is not a good idea to touch the DOM directly in React?
+
+Touching the DOM directly in React is not a good idea because it can lead to inconsistencies between the React virtual DOM and the actual DOM. React's declarative nature and virtual DOM are designed to efficiently manage and update the UI, and direct DOM manipulation can interfere with this process, leading to bugs and unpredictable behavior.
+
+## What is most frequently used in React? Controlled or Uncontrolled input.
+
+Controlled inputs are most frequently used in React because they provide better control over the form data and allow for more consistent and predictable state management.
+
+## What do you need to write uncontrolled input?
+
+To write an uncontrolled input, you need to use refs to access the input's value directly from the DOM.
+
+## Does state require to write uncontrolled input?
+
+No, state is not required to write an uncontrolled input. The input's value is managed by the DOM itself, and you access the value using refs.
+
+## When do you use uncontrolled input?
+
+Uncontrolled inputs are typically used in simple forms or when you need quick access to the input's value without the overhead of managing state. They are useful when integrating with third-party libraries that expect DOM elements.
+
+## When do you use controlled input?
+
+Controlled inputs are used when you need to manage the input's value through the React state. They are essential for form validation, dynamic forms, and when you need to perform actions based on the input's value in real-time.
+
+## Do you use a controlled or uncontrolled input to validate form input fields?
+
+Controlled inputs are used to validate form input fields because they provide direct control over the input's value through the React state, making it easier to implement and manage validation logic.
