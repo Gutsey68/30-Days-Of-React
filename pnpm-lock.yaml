@@ -8,15 +8,15 @@ importers:
 
   .:
     dependencies:
-      '@fontsource/roboto':
-        specifier: ^5.0.13
-        version: 5.0.13
+      classnames:
+        specifier: ^2.5.1
+        version: 2.5.1
 
 packages:
 
-  '@fontsource/roboto@5.0.13':
-    resolution: {integrity: sha512-j61DHjsdUCKMXSdNLTOxcG701FWnF0jcqNNQi2iPCDxU8seN/sMxeh62dC++UiagCWq9ghTypX+Pcy7kX+QOeQ==}
+  classnames@2.5.1:
+    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
 
 snapshots:
 
-  '@fontsource/roboto@5.0.13': {}
+  classnames@2.5.1: {}
