@@ -648,3 +648,35 @@ The purpose of the `classnames` package is to conditionally join CSS class names
 ## What is the purpose of validator package?
 
 The purpose of the `validator` package is to provide a set of string validation and sanitization functions. It helps in validating and sanitizing user inputs to ensure they meet certain criteria, such as valid email addresses, URLs, and other common data formats.
+
+# Higher Order Component
+
+## What is a Higher Order Function?
+
+A higher order function is a function that either takes one or more functions as arguments, returns a function as its result, or both. Higher order functions are a powerful concept in functional programming and are commonly used in JavaScript for tasks such as iterating over collections, composing functions, and more.
+
+Examples of higher order functions include `map`, `filter`, and `reduce`.
+
+## What is a Higher Order Component?
+
+A Higher Order Component (HOC) is an advanced technique in React for reusing component logic. An HOC is a function that takes a component and returns a new component with enhanced capabilities. HOCs are used to abstract and share common functionality between components without repeating code.
+
+## What is the difference between Higher Order Function and Higher Order Component?
+
+1. **Purpose and Usage**:
+
+   - **Higher Order Function**: Aims to abstract and reuse logic by taking functions as arguments and/or returning functions. It is a core concept in functional programming and is not specific to any particular library or framework.
+   - **Higher Order Component**: A specific pattern in React used to enhance components by adding extra functionality. It takes a component as an argument and returns a new component.
+
+2. **Context**:
+
+   - **Higher Order Function**: Used broadly in JavaScript and other functional programming contexts.
+   - **Higher Order Component**: Specific to React and used for extending the functionality of React components.
+
+3. **Examples**:
+   - **Higher Order Function**: `map`, `filter`, `reduce` in JavaScript.
+   - **Higher Order Component**: `withRouter`, `connect` from `react-redux`.
+
+## A higher order component can allow us to enhance a component. (T or F)
+
+**True**. A Higher Order Component (HOC) allows us to enhance a component by wrapping it with additional functionality. This technique is useful for sharing common logic between components, such as handling authentication, data fetching, or adding styling, without repeating code in each component.
