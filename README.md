@@ -680,3 +680,30 @@ A Higher Order Component (HOC) is an advanced technique in React for reusing com
 ## A higher order component can allow us to enhance a component. (T or F)
 
 **True**. A Higher Order Component (HOC) allows us to enhance a component by wrapping it with additional functionality. This technique is useful for sharing common logic between components, such as handling authentication, data fetching, or adding styling, without repeating code in each component.
+
+# React Router
+
+## What package do you use to implement routing in React?
+
+To implement routing in React, you use the `react-router-dom` package.
+
+## What is the default export in `react-router-dom`?
+
+The default export in `react-router-dom` is `BrowserRouter`.
+
+## What is the use of the following Components?
+
+- **Route**:
+  The `Route` component is used to render UI when its path matches the current URL. It allows you to define which component should be rendered for a specific route.
+
+- **NavLink**:
+  The `NavLink` component is a special type of link that adds styling attributes to the rendered element when it matches the current URL. It's used for navigation links with active styling.
+
+- **Switch**:
+  The `Switch` component is used to group multiple `Route` components. It renders the first `Route` that matches the current URL, ensuring that only one route is rendered at a time.
+
+- **Redirect**:
+  The `Redirect` component is used to programmatically navigate the user to a different route. It can be used to redirect users from one route to another.
+
+- **Prompt**:
+  The `Prompt` component is used to prompt the user before navigating away from the current page. It can be useful for confirming navigation actions that might result in unsaved changes being lost.

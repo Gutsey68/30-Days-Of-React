@@ -1,0 +1,84 @@
+$headingfont: 'Poiret One', sans-serif;
+$textfont: 'Montserrat', sans-serif;
+$primary: red;
+$primary-hover: rgb(155, 0, 0);
+$margin: 2rem auto;
+
+header {
+  position: sticky;
+  top: 0;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    align-items: center;
+  }
+  .home {
+    font-family: $headingfont;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  a {
+    font-family: $textfont;
+    font-weight: 500;
+    color: $primary;
+    &:hover {
+      color: $primary-hover;
+    }
+  }
+  .rightlink a {
+    margin-left: 1rem;
+  }
+}
+
+.homepage {
+  margin: $margin;
+  font-family: $textfont;
+  .flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  img {
+    width: 15rem;
+    border-radius: 50%;
+  }
+}
+
+footer {
+  font-family: $textfont;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(64px);
+  z-index: 0;
+}
+
+.wrap {
+  width: 80vh;
+  aspect-ratio: 1/1;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 247, 248, 1) 0%,
+    rgb(218, 48, 128) 100%
+  );
+  opacity: 0.3;
+  clip-path: polygon(
+    10% 25%,
+    35% 25%,
+    35% 0%,
+    65% 0%,
+    65% 25%,
+    90% 25%,
+    90% 50%,
+    65% 50%,
+    65% 100%,
+    35% 100%,
+    35% 50%,
+    10% 50%
+  );
+  position: relative;
+  z-index: 0;
+}
