@@ -1,0 +1,34 @@
+$primary: #d9d2f6;
+$secondary: #00e091;
+
+body {
+  background-color: $primary;
+}
+
+.heading {
+  text-align: center;
+  h2 {
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+  .cats {
+    color: $secondary;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px white dashed;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  ol {
+    text-align: left;
+    margin-left: 8rem;
+  }
+  h3 {
+    margin-top: 3rem;
+  }
+}

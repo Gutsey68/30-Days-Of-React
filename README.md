@@ -707,3 +707,40 @@ The default export in `react-router-dom` is `BrowserRouter`.
 
 - **Prompt**:
   The `Prompt` component is used to prompt the user before navigating away from the current page. It can be useful for confirming navigation actions that might result in unsaved changes being lost.
+
+# Fetch and Axios
+
+## What is HTTP request?
+
+An HTTP request is a message sent by a client to a server in order to request data or services. It is the foundation of data communication on the web. HTTP requests can be used to retrieve web pages, submit forms, upload files, and perform other operations on the server.
+
+## What are the most common HTTP requests?
+
+The most common HTTP requests (also known as HTTP methods) are:
+
+1. **GET**: Requests data from a server (read-only).
+2. **POST**: Submits data to be processed to a server (creates new resources).
+3. **PUT**: Updates an existing resource on the server.
+4. **DELETE**: Deletes a resource from the server.
+5. **PATCH**: Partially updates an existing resource on the server.
+6. **HEAD**: Similar to GET, but only retrieves the headers of a resource.
+
+## What is fetch?
+
+`fetch` is a built-in JavaScript function that allows you to make HTTP requests to servers. It returns a Promise that resolves to the Response object representing the response to the request.
+
+## What is axios?
+
+`axios` is a popular JavaScript library used to make HTTP requests from the browser or Node.js. It is promise-based and provides a more powerful and flexible API than the native `fetch` function.
+
+## What is the difference between fetch and axios?
+
+- **Built-in vs. Library**: `fetch` is built into modern browsers, while `axios` is a third-party library that you need to install.
+- **Syntax**: `axios` has a simpler syntax and more features out of the box compared to `fetch`.
+- **Interceptors**: `axios` supports request and response interceptors, making it easier to handle tasks like authentication.
+- **Automatic JSON Handling**: `axios` automatically transforms JSON data, while with `fetch`, you need to call the `.json()` method on the response.
+- **Error Handling**: `axios` treats HTTP error statuses (like 404 or 500) as errors, while `fetch` only rejects the Promise on network errors.
+
+## Do you prefer fetch to axios for making HTTP requests?
+
+Personal preference varies. Some developers prefer `axios` for its simplicity, additional features, and better error handling, while others prefer `fetch` for its native availability and smaller footprint (no need to install an extra library).
